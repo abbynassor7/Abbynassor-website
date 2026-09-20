@@ -28,14 +28,19 @@ header {
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo::first-letter {
     border: 2px solid #ffffff;
-    padding: 6px 14px;
-    border-radius: 10px;
+    border-radius: 50%;
+    padding: 2px 7px;
 }
 
 nav a {
