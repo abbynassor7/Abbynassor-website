@@ -404,6 +404,25 @@ footer {
     <p>© 2026 Abbynassor Refrigeration & Air Condition</p>
     <p>Professional Refrigeration & Air Conditioning Solutions</p>
 </footer>
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".hero-slider img");
 
+function showSlides() {
+    slides.forEach(slide => slide.style.display = "none");
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 4000);
+}
+
+showSlides();
+</script>
 </body>
 </html>
