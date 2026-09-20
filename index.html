@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abbynassor Refrigeration & Air Condition</title>
-
 <style>
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+}
+
 body {
     background: #f5fbf8;
     color: #123;
     line-height: 1.6;
 }
+
 header {
     background: #006994;
     color: white;
@@ -24,7 +26,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
 }
 
 .logo {
@@ -98,7 +99,26 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+.hero-slider {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 18px;
+    position: relative;
+}
 
+.hero-slider img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: none;
+}
+
+.hero-slider img:first-child {
+    display: block;
+}
 <a href="tel:+255676638972">Call Now</a>
 <a href="https://wa.me/255676638972" target="_blank">WhatsApp Us</a>
 
@@ -206,7 +226,12 @@ footer {
     <p>
         AC • Fridge • Freezer • Chiller • Cold Room
     </p>
-
+<div class="hero-slider">
+    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4" alt="HVAC VRF System">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" alt="Industrial Chiller">
+    <img src="https://images.unsplash.com/photo-1584568694244-4f5b1f0a1c3a" alt="Commercial Refrigeration">
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Refrigeration Technician">
+</div>
     <div class="buttons">
         <a class="call" href="#contact">Call Now</a>
         <a class="whatsapp" href="#contact">WhatsApp Us</a>
